@@ -1,0 +1,27 @@
+.board {
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    cursor: pointer;
+}
+
+@keyframes emergence {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.board.win .cell.win>div {
+    animation-name: emergence;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+    animation-delay: .65s;
+}
+
+.board.win .cell>div, .board.tie .cell>div {
+    transition: opacity 1s ease;
+}
+
+.board.win .cell:not(.win)>div, .board.tie .cell>div {
+    opacity: 0.5;
+}

@@ -1,0 +1,27 @@
+.text_winner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 45px auto;
+}
+
+.variant {
+    position: absolute;
+    font-family: 'Chilanka', cursive;
+    font-size: 25px;
+    color: white;
+}
+
+.variant span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
